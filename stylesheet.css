@@ -2,6 +2,8 @@ p{
     background-color: hotpink;
 }
 
-.ueberschrift {
-    font-size: 20px;
+h1, .ueberschrift {
+    font-size: 50px;
+    color: aquamarine;
+    font-family: fantasy:
 }
