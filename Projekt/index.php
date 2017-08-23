@@ -29,24 +29,11 @@ include "header.php";
 			  <li><a href="admin.php">Login</a></li>
 			  <li><a href="Registrieren.php">Registrieren</a></li>		
 			  <li ><a href="suche.php">Suchen </a></li>
-			  <li ><a href=""></a></li>
-			  <li ><a href=""></a></li>
-			  <li ><a href=""></a></li>
-			  <li ><a href=""></a></li>
-			  <li ><a href=""></a></li>
-			  <li ><a href=""></a></li>
-			  <li ><a href=""></a></li>
-			  <li ><a href=""></a></li>
-			  <li ><a href=""></a></li>
-			  <li ><a href=""></a></li>
-			  <li ><a href=""></a></li>
-			  <li ><a href=""></a></li>
-			  <li ><a href=""></a></li>
-			  <li ><a href=""></a></li>
-			  <li ><a href="index.php"><img id="rechts" src="images/logo.jpg"></a></li>
+			  <li ><a href="">NaAaJa</a></li>
 		  
 			  <form action='' method='POST'>
           </ul>
+              
         </div><!--/.nav-collapse -->
       </div>
     </div>  
@@ -79,20 +66,22 @@ include "header.php";
 		 <div class="clearfix"></div>
        </div>	
     
-<font color="#FF0000">
+<font color="#000000">
 
 <center>
 <h4> Moderne Web Anwendung SS17 </h4>
 <h5>Nathalie Kuhn, Aaron Seggelke, Jan Werner </h5>
 <h6>2017 © </h6>
 <h6> <a href="Registrieren.php"> Hier zum Registrieren </a> </h6>
+<?PHP
+    /*
 <a href="http://www.bilderhoster.net/galerie-hochladen.html">  </a>
 <a href="http://www.bilderhoster.net" titel=" Bilder hochladen " target="_blank">
 <img src="http://www.bilderhoster.net/banner/234x60.gif" alt=" Bilder Hochladen " border="0"></a>
 
 <a href="https://www.google.de/search?client=opera&q=google&sourceid=opera&ie=UTF-8&oe=UTF-8#q=Bildergalerie" titel=" Google " target="_blank">
 <img src="images/google.png" alt=" Bilder Hochladen " border="0"></a>
-
+*/  ?>
 </center>
 </font>
   

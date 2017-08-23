@@ -1,9 +1,11 @@
 
 body{
- background-color:#222020;
+
+    background-image: url(images/hintergrund2.jpg);
+    background-size: cover;
 }
 .navbar-inverse {
-    background-color: #086A87;
+    background-color: #383838;
     border-color: #080808;
 }
 .item{
@@ -22,6 +24,12 @@ border:5px solid #e1e1e1;
 .cats .item a:hover{
 float:left;
 border:5px solid #a60000; 
+}
+
+.centered {
+    margin: 0 auto;
+    text-align: left;
+    width: 800px;
 }
 =======================================================================================================
 .cats .item  img{
@@ -107,11 +115,13 @@ height:450px;
 
 [class*="fontawesome-"]:before {
   font-family: 'FontAwesome', sans-serif;
-}
 
+}
+        
 input {
   border: none;
   font-family: 'Open Sans', Arial, sans-serif;
+
   font-size: 16px;
   line-height: 1.5em;
   padding: 0;
@@ -121,10 +131,12 @@ input {
 
 
 after { clear: both; }
-
+  
 #login {
+
   margin:10px auto;
   width: 400px;
+     
 }
 
 #login form {
@@ -321,6 +333,6 @@ p:hover {
 
 
 #footer  
-    color:red;
+    color:black;
 }
 

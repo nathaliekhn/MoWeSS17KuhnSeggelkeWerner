@@ -22,7 +22,7 @@ if(empty($_SESSION["user_id"]))
     <link href="starter-template.css" rel="stylesheet">
 
   </head>
-  <body background ="images/Hintergrund.jpg">
+  <body>
     <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
@@ -38,28 +38,7 @@ if(empty($_SESSION["user_id"]))
           <ul class="nav navbar-nav">
             <li class="active"><a href="index.php">Home</a></li>
 			<li ><a href="registrieren.php">Registrieren</a></li>   
- <li ><a href=""></a></li>
-			  <li ><a href=""></a></li>
-			  <li ><a href=""> </a></li>
-			  <li ><a href=""></a></li>
-			  <li ><a href=""></a></li>
-			  <li ><a href=""></a></li>
-			  <li ><a href=""></a></li>
-			  <li ><a href=""></a></li>
-			  <li ><a href=""></a></li>
-			  <li ><a href=""></a></li>
-			  <li ><a href=""></a></li>
-			  <li ><a href=""></a></li>
-			  <li ><a href=""></a></li>
-			  <li ><a href=""></a></li>
-			  <li ><a href=""></a></li>
-			  <li ><a href=""></a></li>
-			  <li ><a href=""></a></li>
-			  <li ><a href=""></a></li>
-			   <li ><a href=""></a></li>
-			  <li ><a href=""></a></li>
-			  
-			  <li class="logo" ><a href="index.php"><img id="rechts" src="images/logo.jpg"></a></li>			
+			 	
           </ul>
         </div><!--/.nav-collapse -->
       </div>

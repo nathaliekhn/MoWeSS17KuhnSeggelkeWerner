@@ -2,7 +2,6 @@
 include "header.php";
 include "Jsonfunction.php";
 ?>
-  <body background ="images/Hintergrund.jpg">
     <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
@@ -12,35 +11,17 @@ include "Jsonfunction.php";
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#"></a>
+            
+          
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li ><a href="index.php">Home</a></li>
-            <li class="active"><a href="JSONs.php" class="active">JSON</a></li>
-            <li><a href="admin.php">Admin login</a></li>
-			<li ><a href=""></a></li>
-			  <li ><a href=""></a></li>
-			  <li ><a href=""></a></li>
-			  <li ><a href=""></a></li>
-			  <li ><a href=""></a></li>
-			  <li ><a href=""></a></li>
-			  <li ><a href=""></a></li>
-			  <li ><a href=""></a></li>
-			  <li ><a href=""></a></li>
-			  <li ><a href=""></a></li>
-			  <li ><a href=""></a></li>
-			   <li ><a href=""></a></li>
-			  <li ><a href=""></a></li>
-			  <li ><a href=""></a></li>
-			  <li ><a href=""></a></li>
-			  <li ><a href=""></a></li>
-			  <li ><a href=""></a></li>
-			   <li ><a href=""></a></li>
-			  <li ><a href=""></a></li>
-			  
-			  
-			  <li class="logo" ><a href="index.php"><img id="rechts" src="images/logo.jpg"></a></li>
+            <li ><a href="index.php">Home</a></li>                   
+			<li class="active"><a href="JSONs.php">JSONs</a></li>
+			  <li><a href="admin.php">Login</a></li>
+			  <li><a href="Registrieren.php">Registrieren</a></li>		
+			  <li ><a href="suche.php">Suchen </a></li>
+			  <li ><a href="">NaAaJa</a></li>
           </ul>
         </div>
       </div>

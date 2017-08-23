@@ -33,35 +33,12 @@
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="index.php">Home</a></li>    
-<li ><a href=""> </a></li>
-			  <li ><a href=""></a></li>
-			  <li ><a href=""></a></li>
-			  <li ><a href=""></a></li>
-			  <li ><a href=""></a></li>
-			  <li ><a href=""></a></li>
-			  <li ><a href=""></a></li>
-			  <li ><a href=""></a></li>
-			  <li ><a href=""></a></li>
-			  <li ><a href=""></a></li>
-			  <li ><a href=""></a></li>
-			  <li ><a href=""></a></li>
-			  <li ><a href=""></a></li>
-			  <li ><a href=""></a></li>
-			  <li ><a href=""></a></li>
-			  <li ><a href=""></a></li>
-			  <li ><a href=""></a></li>
-			  <li ><a href=""></a></li>
-			  <li ><a href=""></a></li>
-			  <li ><a href=""></a></li>
-			  <li ><a href=""></a></li>
-			  <li ><a href=""></a></li>
-			  <li ><a href=""></a></li>
-			  <li ><a href=""></a></li>
-			  
-			  
-			  <li class="logo" ><a href="index.php"><img id="rechts" src="images/logo.jpg"></a></li>			
-		
+            <li><a href="index.php">Home</a></li> 
+              <li><a href="JSONs.php">JSONs</a></li>
+			  <li><a href="admin.php">Login</a></li>
+			  <li class="active"><a href="Registrieren.php">Registrieren</a></li>	
+			  <li ><a href="suche.php">Suchen </a></li>
+			  <li ><a href="">NaAaJa</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -101,7 +78,7 @@ $vorname  = $_POST['vname'];
 }
 ?>
 
-<p class="texto">Regestrieren</p>
+<p class="texto">Registrieren</p>
 <div class="Registro">
 <div  id="login">
 <form method="POST" name ="registrieren.php" >
@@ -110,7 +87,7 @@ $vorname  = $_POST['vname'];
 <span class="fontawesome-envelope-alt"></span><input type="text" required placeholder="Email" name="email" >
 <span class="fontawesome-user"></span><input type="text" required placeholder="Benutzer Name" name="username" > 
 <span class="fontawesome-envelope-alt"></span><input name="password" type="password"  required placeholder="Password">
-			<input type="submit" value="Sprechern" name="log">
+			<input type="submit" value="Speichern" name="log">
 </div>
 </body>
 </html>
