@@ -17,6 +17,7 @@
  <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
+		<a class="navbar-brand" href="#">Suche</a>
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="sr-only">Gallerien</span>
             <span class="icon-bar"></span>
@@ -26,11 +27,11 @@
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li><a href="index.php">Home</a></li>                                   <li><a href="JSONs.php">JSONs</a></li>
+            <li><a href="index.php">Home</a></li>                                   
+			<li><a href="JSONs.php">JSONs</a></li>
             <li><a href="admin.php">Login</a></li>
             <li><a href="Registrieren.php">Registrieren</a></li>		
             <li class="active"><a href="suche.php">Suchen </a></li>
-            <li ><a href="">NaAaJa</a></li>
           
               
           </ul>
@@ -42,16 +43,20 @@
 <form action='' method='POST'>
  
 
-<div class="centered">
+<?php
+//<div class="centered"> 
+?>
 
 		<form id="tfnewsearch" method="get" action="http://www.google.com">
-		        <input type="text" class="tftextinput" name='query' size="21" maxlength="120" placeholder='Ihre Suchwort'>
-				<input type="submit" value="Recherchieren" class="tfbutton" name='search'>
+		        <input type="text" class="tftextinput" name='query' size="21" maxlength="120" placeholder='Suchwort' />
+				<input type="submit" value="Suchen" class="tfbutton" name='search' />
 				
 			  
 		</form>
 	<div class="tfclear"></div>
-	</div>
+<?php
+//</div> 
+?>
     
 
 	</form>
@@ -89,12 +94,19 @@ include "functions.php";
                         }
 
 
-                ?>
-				
+?>
 
-
-
-	</body>
+	<div class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
+	<center>
+	<font color="#999999">
+	<h6> Moderne Web Anwendung SS17 | Nathalie Kuhn, Aaron Seggelke, Jan Werner © 2017 | <a href="Registrieren.php">Hier zum Registrieren</a></h6>
+	</font>
+	</center>
+	</div>
+	
+	<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+</body>
 </html>
 
 	

@@ -5,6 +5,7 @@ include "Jsonfunction.php";
     <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
+		<a class="navbar-brand" href="#">JSONs</a>
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="sr-only">Gallerien</span>
             <span class="icon-bar"></span>
@@ -21,7 +22,6 @@ include "Jsonfunction.php";
 			  <li><a href="admin.php">Login</a></li>
 			  <li><a href="Registrieren.php">Registrieren</a></li>		
 			  <li ><a href="suche.php">Suchen </a></li>
-			  <li ><a href="">NaAaJa</a></li>
           </ul>
         </div>
       </div>
@@ -38,12 +38,19 @@ include "Jsonfunction.php";
 
     </div>
 
+	<div class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
+	<center>
+	<font color="#999999">
+	<h6> Moderne Web Anwendung SS17 | Nathalie Kuhn, Aaron Seggelke, Jan Werner © 2017 | <a href="Registrieren.php">Hier zum Registrieren</a></h6>
+	</font>
+	</center>
+	</div>
  
     <!-- Bootstrap core JavaScript
     ================================================== -->
 	
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-    <script src="../../dist/js/bootstrap.min.js"></script>
+    <script src="bootstrap.min.js"></script>
 
   </body>
 </html>

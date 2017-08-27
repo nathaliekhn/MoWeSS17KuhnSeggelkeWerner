@@ -26,6 +26,7 @@ if(empty($_SESSION["user_id"]))
     <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
+		<a class="navbar-brand" href="#">Login</a>
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="sr-only"></span>
             <span class="icon-bar"></span>
@@ -36,7 +37,8 @@ if(empty($_SESSION["user_id"]))
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="index.php">Home</a></li>
+            <li class=""><a href="index.php">Home</a></li>
+			<li class="active"><a href="#">Login</a></li>
 			<li ><a href="registrieren.php">Registrieren</a></li>   
 			 	
           </ul>
@@ -47,19 +49,26 @@ if(empty($_SESSION["user_id"]))
 <?PHP
 echo $output;
 ?>
-<p class="texto">Einloggen</p>
 <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,700">
 <div  id="login">
 <form method="POST" action="admin.php">
     <span class="fontawesome-user"></span>
-          <input type="text" id="username" placeholder="Benutzer Name" name = "username" value="" required >
+          <input type="text" id="username" placeholder="Benutzername" name = "username" value="" required >
        
-        <span class="fontawesome-lock"></span>
+
           <input type="password" id ="password" placeholder="Password" name = "password" value="" required >
         
         <input type="submit" value="Anmelden" id="submit" name ="submit">
 
 </form>
+
+<div class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
+<center>
+<font color="#999999">
+<h6> Moderne Web Anwendung SS17 | Nathalie Kuhn, Aaron Seggelke, Jan Werner © 2017 | <a href="Registrieren.php">Hier zum Registrieren</a></h6>
+</font>
+</center>
+</div>
 
  <!-- Bootstrap core JavaScript
    
@@ -67,7 +76,7 @@ echo $output;
  ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-    <script src="../../dist/js/bootstrap.min.js"></script>
+    <script src="bootstrap.min.js"></script>
   </body>
 </html>
 
@@ -89,32 +98,35 @@ exit;
     <meta name="author" content="">
     <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
     <title>Gallerien Admin</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
     <!-- Bootstrap core CSS -->
-    <link href="bootstrap.min.css" rel="stylesheet">
+    <link href="bootstrap.min.css" rel="stylesheet" />
     <!-- Custom styles for this template -->
-    <link href="starter-template.css" rel="stylesheet">
+    <link href="starter-template.css" rel="stylesheet" />
   </head>
- <body background ="images/Hintergrund.jpg">
+ <body>
 
     <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
+		<a class="navbar-brand" href="#">Mein Account</a>
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="sr-only">Benutzer</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.php">Home</a>
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Herzlich willkommen  </a></li>
-			<li class=""><a href="index.php?status=logout"> Ausloggen  </a></li>
+		  <li class=""><a href="index.php">Home</a></li>
+            <li class="active"><a href="#">Mein Account</a></li>
+			<li class=""><a href="index.php?status=logout"> Ausloggen</a></li>
           </ul>
         </div>
       </div>
     </div>
+	
     <div class="container">		
 	<?PHP
  $gid=0;
@@ -264,7 +276,16 @@ if(!empty($_POST["gallerie"]))
       </div>
 
     </div>
+
+<div class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
+<center>
+<font color="#999999">
+<h6> Moderne Web Anwendung SS17 | Nathalie Kuhn, Aaron Seggelke, Jan Werner © 2017 | <a href="Registrieren.php">Hier zum Registrieren</a></h6>
+</font>
+</center>
+</div>
+	
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-    <script src="../../dist/js/bootstrap.min.js"></script>
+    <script src="bootstrap.min.js"></script>
   </body>
 </html>

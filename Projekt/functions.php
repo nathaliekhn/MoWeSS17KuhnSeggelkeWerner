@@ -21,8 +21,8 @@ $script='<script type="text/javascript"> var bilder=new Array();';
      }
 	$i=0;
 	$i=0;
-	$path = "D:\\xampp\htdocs\Gallerie\Gallerien\\".$name;
-	$path2 = "Gallerien/".$name;
+	$path = "C:\\xampp\htdocs\MoWeSS17KuhnSeggelkeWerner\Alben\\".$name;
+	$path2 = "Alben/".$name;
 	 if ($handle=opendir($path)) 
     { 
       while (false!==($file=readdir($handle))) 
@@ -55,7 +55,7 @@ $script='<script type="text/javascript"> var bilder=new Array();';
   
   ';
   $html .='</div">';
-   //  $directory="C:\\xampp\htdocs\\Gallerie\\Gallerien\\" .$name;
+   //  $directory="C:\\xampp\htdocs\MoWeSS17KuhnSeggelkeWerner\Alben\\" .$name;
 	 
 
 return $html .$script;

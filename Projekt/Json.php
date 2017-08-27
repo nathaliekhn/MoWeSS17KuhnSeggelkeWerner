@@ -29,8 +29,8 @@ function loadSingelGallery($id)
        }
      }
 	 $i=0;
-	$path="D:\\xampp\htdocs\\Gallerie\\Gallerien\\" .$name;
-	$path2="Bilder_Gallerien\\".$name;
+	$path="C:\\xampp\htdocs\MoWeSS17KuhnSeggelkeWerner\Alben\\" .$name;
+	$path2="Alben\\".$name;
 	//Die gesamte Verzeichnisinhalt auslesen
 	 if ($handle=opendir($path)) 
     { 
@@ -45,9 +45,9 @@ function loadSingelGallery($id)
             
 			
 			if($i==0){
-		    $jsonresult .="{ 'Bildname':'http://localhost/Bilder_Gallerie/".$path2."/".$file ."'}";
+		    $jsonresult .="{ 'Bildname':'http://localhost/MoWeSS17KuhnSeggelkeWerner/".$path2."/".$file ."'}";
 		    }else{
-			$jsonresult .=",{ 'Bildname':'http://localhost/Bilder_Gallerie/".$path2."/".$file ."'}";
+			$jsonresult .=",{ 'Bildname':'http://localhost/MoWeSS17KuhnSeggelkeWerner/".$path2."/".$file ."'}";
 			}
 			 $i++;
           } 

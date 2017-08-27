@@ -17,10 +17,10 @@ if(!empty($_POST['GallerieCmd']))
 
 $galleriename=$_POST['galleriename'];
 $comment=$_POST['comment'];
-$sql="INSERT INTO gallerien SET name='".$galleriename."',kommentar='" .$comment ."'";
+$sql="INSERT INTO gallerien SET user_id='".$_SESSION["user_id"]."', name='".$galleriename."',kommentar='" .$comment ."'";
 mysqli_query($_SESSION["connection"], $sql); 
 
-$directory="D:\\xampp\htdocs\\Gallerie\\Gallerien\\" .$galleriename;
+$directory="C:\\xampp\htdocs\\MoWeSS17KuhnSeggelkeWerner\\Alben\\" .$galleriename;
 
 if(!is_dir($directory)){
    mkdir($directory);
@@ -45,7 +45,7 @@ function doLogin($username,$userpwd)
       
 	  return true;
    }
-   echo '<font color="#3399ff"> <h3>Username oder Passwort falsch</h3> </font>';
+   echo '<center><font color="red"> <h4>Benutzername oder Passwort falsch!</h4></font></center>';
    return false;
 }
   function LoadPicturesFromDir($path,$ver) 

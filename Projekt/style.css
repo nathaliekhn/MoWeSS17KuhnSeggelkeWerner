@@ -243,12 +243,12 @@ input {
 	-webkit-appearance: none;
 }
 
-.Registro {
+.Registrieren {
 	margin: 50px auto;
 	width: 400px;
 }
 
-.Registro span {
+.Registrieren span {
 	color: hsl(5, 50%, 57%);
 	display: block;
 	height: 40px;
@@ -258,14 +258,14 @@ input {
 	width: 36px;
 }
 
-.Registro input {
+.Registrieren input {
 	border: none;
 	height: 40px;
 	outline: none;
 	
 }
 
-.Registro input[type="text"] {
+.Registrieren input[type="text"] {
 	background-color: #fff;
 	border-top: 2px solid #2c90c6;
 	border-right: 1px solid #000;
@@ -280,7 +280,7 @@ input {
 	width: 240px;
 }
 
-.Registro input[type="password"] {
+.Registrieren input[type="password"] {
 	background-color: #fff;
 	border-top: 2px solid #2c90c6;
 	border-right: 1px solid #000;
@@ -297,7 +297,7 @@ input {
 	width: 240px;
 }
 
-.Registro input[type="submit"] {
+.Registrieren input[type="submit"] {
 	background-color: #2c90c6;
 	border: 1px solid #2c90c6;
 	border-radius: 15px;
@@ -312,7 +312,7 @@ input {
 	text-transform: uppercase;
 	width: 240px;	
 }
-.Registro input[type="submit"]:hover {
+.Registrieren input[type="submit"]:hover {
 	background-color: #2c70c6;
   box-shadow: 2px 2px 20px  #2c90c6, #fff 0 -1px 2px;
 }
@@ -325,10 +325,10 @@ input {
   text-shadow: 1px 2px 1px  rgba(0,0,0,.5);
   padding-top: 35px;
 }
-p:hover {
+/*p:hover {
   text-shadow: 2px 2px 20px  #2c90c6, #fff 0 -1px 2px;
 }
-
+*/
 =========================
 
 

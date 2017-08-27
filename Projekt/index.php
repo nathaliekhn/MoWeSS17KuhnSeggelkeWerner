@@ -12,6 +12,7 @@ include "header.php";
     <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
+		<a class="navbar-brand" href="#">Home</a>
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="sr-only">Gallerien</span>
             <span class="icon-bar"></span>
@@ -29,7 +30,6 @@ include "header.php";
 			  <li><a href="admin.php">Login</a></li>
 			  <li><a href="Registrieren.php">Registrieren</a></li>		
 			  <li ><a href="suche.php">Suchen </a></li>
-			  <li ><a href="">NaAaJa</a></li>
 		  
 			  <form action='' method='POST'>
           </ul>
@@ -66,13 +66,14 @@ include "header.php";
 		 <div class="clearfix"></div>
        </div>	
     
-<font color="#000000">
 
+
+<div class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
 <center>
-<h4> Moderne Web Anwendung SS17 </h4>
-<h5>Nathalie Kuhn, Aaron Seggelke, Jan Werner </h5>
-<h6>2017 © </h6>
-<h6> <a href="Registrieren.php"> Hier zum Registrieren </a> </h6>
+<font color="#999999">
+<h6> Moderne Web Anwendung SS17 | Nathalie Kuhn, Aaron Seggelke, Jan Werner © 2017 | <a href="Registrieren.php">Hier zum Registrieren</a></h6>
+</font>
+</nav>
 <?PHP
     /*
 <a href="http://www.bilderhoster.net/galerie-hochladen.html">  </a>
@@ -83,11 +84,12 @@ include "header.php";
 <img src="images/google.png" alt=" Bilder Hochladen " border="0"></a>
 */  ?>
 </center>
-</font>
+
   
     
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-    <script src="../../dist/js/bootstrap.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+	
 	<script>
 	$(document).ready(function()
   {      

@@ -24,6 +24,7 @@
  <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
+		<a class="navbar-brand" href="#">Registrieren</a>
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="sr-only">Gallerien</span>
             <span class="icon-bar"></span>
@@ -38,7 +39,6 @@
 			  <li><a href="admin.php">Login</a></li>
 			  <li class="active"><a href="Registrieren.php">Registrieren</a></li>	
 			  <li ><a href="suche.php">Suchen </a></li>
-			  <li ><a href="">NaAaJa</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -61,33 +61,39 @@ $vorname  = $_POST['vname'];
 }
 #===========POST
 
-    if(isset($_POST['log'])){
-	if(empty($username) or empty ($password) or empty ($email) ){		
-		echo' <font color="#3399ff"> <h3> Fühllen Sie Bitte alles aus</h3> </font> ';
-}
-	else{
-		$insertuser = mysqli_query 
-		($_SESSION["connection"],
-		"INSERT INTO users (username,password,email,name,vorname) 
-		values ('$username','$password','$email','$name','$vorname')");
-		if (isset($insertuser)) {
-			
-			echo' <font color="#3399ff"> <h3>Ihre Daten sind erfolgreich eingefügt</h3> </font> ';
-		}	
-	}
+if(isset($_POST['log'])){
+	$insertuser = mysqli_query 
+	($_SESSION["connection"],
+	"INSERT INTO users (username,password,email,name,vorname) 
+	values ('$username','$password','$email','$name','$vorname')") or die("DB Connection ERROR!");
 }
 ?>
 
-<p class="texto">Registrieren</p>
 <div class="Registro">
 <div  id="login">
 <form method="POST" name ="registrieren.php" >
-<span class="fontawesome-envelope-alt"></span><input type="text"   placeholder="Name" name="name" >
+<span class="fontawesome-envelope-alt"></span><input type="text" required placeholder="Name" name="name" >
 <span class="fontawesome-lock"></span><input type="text" name="vname" id="" required placeholder="Vorname"> 
 <span class="fontawesome-envelope-alt"></span><input type="text" required placeholder="Email" name="email" >
 <span class="fontawesome-user"></span><input type="text" required placeholder="Benutzer Name" name="username" > 
 <span class="fontawesome-envelope-alt"></span><input name="password" type="password"  required placeholder="Password">
-			<input type="submit" value="Speichern" name="log">
+<input type="submit" value="Speichern" name="log">
+<?php 
+if (isset($insertuser) AND isset($_POST['log']) ) {
+	echo' <font color="white"> <h3>Ihre Daten sind erfolgreich eingefügt</h3> </font> ';	
+}
+?>
 </div>
+
+<div class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
+<center>
+<font color="#999999">
+<h6> Moderne Web Anwendung SS17 | Nathalie Kuhn, Aaron Seggelke, Jan Werner © 2017 | <a href="Registrieren.php">Hier zum Registrieren</a></h6>
+</font>
+</center>
+</div>
+
+<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="bootstrap.min.js"></script>
 </body>
 </html>
