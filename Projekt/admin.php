@@ -136,16 +136,16 @@ if(!empty($_POST["gallerie"]))
 
  $gid=$_POST["gid"];
   
- $destination="C:\\xampp\htdocs\\Gallerie\\Gallerien\\" .$_POST["gallerie"]."\\" ;
+ $destination="C:\\xampp\htdocs\\Projekt\\Alben\\" .$_POST["gallerie"]."\\" ;
  
  
-  if ($_FILES["thefile"]["error"] > 0)
+ if ($_FILES["thefile"]["error"] > 0)
     {
     echo "Return Code: " . $_FILES["thefile"]["error"] . "<br>";
     }
   else
     {
-     
+   
     if (file_exists("upload/" . $_FILES["thefile"]["name"]))
       {
       echo $_FILES["thefile"]["name"] . " already exists. ";
@@ -241,7 +241,7 @@ if(!empty($_POST["gallerie"]))
 			$kommentar= $data['kommentar'];
        }
      } 
-     $directory="D:\\xampp\htdocs\\Gallerie\\Gallerien\\" .$name;	 
+     $directory="C:\\xampp\htdocs\\Projekt\\Alben\\" .$name;	 
 
      $html=LoadPicturesFromDir($directory,$name); 
   
@@ -258,7 +258,7 @@ if(!empty($_POST["gallerie"]))
   <div class="panel panel-primary">
  
      <form enctype="multipart/form-data" action="admin.php" method="post">
-<input type="hidden" name="max_file_size" value="100000">
+<input type="hidden" name="max_file_size" value="10000000">
 <input type="hidden" name="gallerie" value="<?PHP echo $name; ?>" />
 <input type="hidden" name="gid" value="<?PHP echo $id; ?>" />
 <h4> Hier können Sie Ihre Datei auswählen und danach direkt hochladen <h4>

@@ -29,7 +29,7 @@ function loadSingelGallery($id)
        }
      }
 	 $i=0;
-	$path="C:\\xampp\htdocs\MoWeSS17KuhnSeggelkeWerner\Alben\\" .$name;
+	$path="C:\\xampp\htdocs\Projekt\Alben\\" .$name;
 	$path2="Alben\\".$name;
 	//Die gesamte Verzeichnisinhalt auslesen
 	 if ($handle=opendir($path)) 

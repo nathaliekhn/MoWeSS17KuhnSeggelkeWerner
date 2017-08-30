@@ -3,9 +3,14 @@ include "header.php";
 ?>
   <body>
   <?PHP
-	//if($_GET['status'] == 'logout'){
-	//	SESSION_RESET();
-	//}
+      if(isset($_GET['status'])){
+          if($_GET['status'] == 'logout'){
+        session_destroy();
+ 
+echo "Logout erfolgreich";
+	}
+      }
+	
 		
   ?>
 
@@ -74,15 +79,7 @@ include "header.php";
 <h6> Moderne Web Anwendung SS17 | Nathalie Kuhn, Aaron Seggelke, Jan Werner © 2017 | <a href="Registrieren.php">Hier zum Registrieren</a></h6>
 </font>
 </nav>
-<?PHP
-    /*
-<a href="http://www.bilderhoster.net/galerie-hochladen.html">  </a>
-<a href="http://www.bilderhoster.net" titel=" Bilder hochladen " target="_blank">
-<img src="http://www.bilderhoster.net/banner/234x60.gif" alt=" Bilder Hochladen " border="0"></a>
 
-<a href="https://www.google.de/search?client=opera&q=google&sourceid=opera&ie=UTF-8&oe=UTF-8#q=Bildergalerie" titel=" Google " target="_blank">
-<img src="images/google.png" alt=" Bilder Hochladen " border="0"></a>
-*/  ?>
 </center>
 
   

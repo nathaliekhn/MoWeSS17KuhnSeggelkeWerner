@@ -21,7 +21,7 @@ $script='<script type="text/javascript"> var bilder=new Array();';
      }
 	$i=0;
 	$i=0;
-	$path = "C:\\xampp\htdocs\MoWeSS17KuhnSeggelkeWerner\Alben\\".$name;
+	$path = "C:\\xampp\htdocs\Projekt\Alben\\".$name;
 	$path2 = "Alben/".$name;
 	 if ($handle=opendir($path)) 
     { 
