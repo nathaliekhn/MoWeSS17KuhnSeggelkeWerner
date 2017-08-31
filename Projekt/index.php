@@ -13,7 +13,7 @@ echo "Logout erfolgreich";
 	
 		
   ?>
-
+<!--Responsive Design-->
     <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
@@ -42,6 +42,7 @@ echo "Logout erfolgreich";
         </div><!--/.nav-collapse -->
       </div>
     </div>  
+<!--Ende Responsive-->
 
 	 
     <div class="container">
@@ -88,6 +89,8 @@ echo "Logout erfolgreich";
     <script src="bootstrap.min.js"></script>
 	
 	<script>
+        
+// Bilder anzeigen (durch diese navigieren)
 	$(document).ready(function()
   {      
       
@@ -123,6 +126,8 @@ echo "Logout erfolgreich";
 	  $("#position").val(id);	  
   }
 	</script>
+        
+       
 
   </body> 
 </html>

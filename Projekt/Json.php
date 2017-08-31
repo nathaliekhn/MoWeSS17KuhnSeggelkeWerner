@@ -9,6 +9,7 @@ if(!empty($_GET["id"]))
   $json=loadSingelGallery($_GET["id"]);
   echo $json;
 }
+//Einzelne Gallerie in JSON Format ausgeben
 function loadSingelGallery($id)
 {
      $jsonresult="[";
@@ -60,7 +61,7 @@ function loadSingelGallery($id)
 	return $jsonresult;
 }
  
-//JSOONS ausgeben VON DEM GALERIE DATEI
+//alle Gallerien im JSON Format ausgeben
 function loadGallery()
 {
 $html='<div class="row cats">';

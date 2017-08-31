@@ -67,13 +67,15 @@
 <?php
 include "config.php";
 include "functions.php";
+    
 
                         if(isset($_POST['search']))
                         {
+                                
                                 $term = $_POST['query'];
-                                $mysql = mysql_connect("localhost","root","");
-                                mysql_select_db("gallerie");
-                                $qu = mysql_query("SELECT * FROM gallerien WHERE name LIKE '%{$term}%' OR kommentar LIKE '%{$term}%'  "); 
+                                $mysql = mysqli_connect("localhost","root","","Bilder_Gallerie");
+                                $sql = "SELECT * FROM gallerien WHERE name LIKE '%$term%' OR kommentar LIKE '%$tera%'";  
+                                $qu = mysqli_query($sql,$_SESSION["connection"]); 
 								echo "
 								<table  font-family:Georgia border ='5' style='width:20%' color='red' bgcolor='#00FF00' font-style:comic sans>
 								<tr>
@@ -81,7 +83,7 @@ include "functions.php";
     <td>Beschreibung</td> 
   </tr>
   ";                              
-                                while($row = mysql_fetch_array($qu))
+                                while($row = mysqli_fetch_array($qu))
                                            {
                                                 echo "<tr><td>";  
                                                 echo $row['name'];

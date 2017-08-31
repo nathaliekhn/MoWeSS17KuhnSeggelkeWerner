@@ -27,6 +27,7 @@ if(!is_dir($directory)){
 
 }
 } 
+//User anmelden
 function doLogin($username,$userpwd)
 {
    $sql="select * from users where username='" .$username ."' and password='".$userpwd."'";
@@ -48,6 +49,8 @@ function doLogin($username,$userpwd)
    echo '<center><font color="red"> <h4>Benutzername oder Passwort falsch!</h4></font></center>';
    return false;
 }
+
+//Bilder aus dem Verzeichnis laden
   function LoadPicturesFromDir($path,$ver) 
   { 
     $html="<div>";

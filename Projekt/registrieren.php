@@ -20,7 +20,8 @@
     <!--  template -->
     <link href="starter-template.css" rel="stylesheet">
        <link href="style.css" rel="stylesheet">
-    
+  
+    <!--Responsive Design-->
  <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
@@ -43,7 +44,7 @@
         </div><!--/.nav-collapse -->
       </div>
     </div>
-   
+  <!--Ende Responsive--> 
     <div class="containere">
 	
 	

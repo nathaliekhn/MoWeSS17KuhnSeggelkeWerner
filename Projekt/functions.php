@@ -1,6 +1,7 @@
 <?PHP
 $path = "";
 $path2 = "";
+// Einzelne Gallerie laden
 function loadSingelGallery($id)
 {
 $name="";	
@@ -62,7 +63,7 @@ return $html .$script;
 
 }
 
-
+//Alle Gallerien laden
 function loadGallery()
 {
 $html='<div class="row cats">';

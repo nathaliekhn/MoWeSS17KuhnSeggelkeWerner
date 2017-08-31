@@ -2,7 +2,7 @@
 
 session_start();
 include "config.php";
-if(empty($_SESSION["user_id"]))
+if(empty($_SESSION["user_id"]))     //User eingeloggt
 {
 ?>
 <!DOCTYPE html>
@@ -23,7 +23,7 @@ if(empty($_SESSION["user_id"]))
 
   </head>
   <body>
-    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">      <!--Beginn Responsive Design (Bootstrap)-->
       <div class="container">
         <div class="navbar-header">
 		<a class="navbar-brand" href="#">Login</a>
@@ -44,11 +44,13 @@ if(empty($_SESSION["user_id"]))
           </ul>
         </div><!--/.nav-collapse -->
       </div>
-    </div>
+    </div>                                                                 <!--Ende Responsive-->
     <div class="container">
 <?PHP
 echo $output;
 ?>
+        
+<!-- Anmedeformular-->
 <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,700">
 <div  id="login">
 <form method="POST" action="admin.php">
@@ -82,12 +84,12 @@ echo $output;
 
 
 <?PHP
-exit;
+exit;       //Beendet Systemablauf 
 
 }
 
 ?>
-
+<!-- Ausgeführt wenn man angemeldet ist -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -105,7 +107,7 @@ exit;
     <link href="starter-template.css" rel="stylesheet" />
   </head>
  <body>
-
+<!-- Responsive-->
     <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
@@ -126,11 +128,15 @@ exit;
         </div>
       </div>
     </div>
-	
-    <div class="container">		
+<!-- Ende Responsive-->	
+    <div class="container">	
+        
+        
 	<?PHP
  $gid=0;
 
+        //Bilderupload in lokales Dateisystem
+        
 if(!empty($_POST["gallerie"]))
 {
 
@@ -160,6 +166,7 @@ if(!empty($_POST["gallerie"]))
 }
 
 ?>
+        <!--Formular zur Erstellung eines neuen Albums-->
 <div class="panel panel-primary">
 <div class="panel panel-primary">
 <div class="container">
@@ -188,6 +195,7 @@ if(!empty($_POST["gallerie"]))
 	  
 	  </div>
 <?PHP
+   
   if(empty($_GET['gid']) && $gid==0)
   {
 ?>
@@ -196,6 +204,7 @@ if(!empty($_POST["gallerie"]))
        
        <div class="btn-group btn-group-justified">
   <?PHP
+      //Alle Gallerien werden angezeigt
      $sql="select * from gallerien";
      $result=mysqli_query($_SESSION["connection"],$sql);
      $num= @mysqli_num_rows($result);
@@ -223,7 +232,7 @@ if(!empty($_POST["gallerie"]))
   <?PHP
   
   }else{
-   
+  //Gallerie mit Id wird ausgewählt und angezeigt
    if($gid==0){
      $gid=$_GET['gid'];
    }  
@@ -276,7 +285,7 @@ if(!empty($_POST["gallerie"]))
       </div>
 
     </div>
-
+<!--Footer-->
 <div class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
 <center>
 <font color="#999999">

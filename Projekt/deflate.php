@@ -1,5 +1,5 @@
 <?php
-
+//Komprimierung
 include "config.php";
 //check that zlib compression is enabled
 if(!ini_get('zlib.output_compression')){ die(); }
